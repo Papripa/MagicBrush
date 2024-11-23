@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="MagicBrush"
+run/main_scene="res://scenes/test/test_scene_object_rocks.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
@@ -21,7 +22,6 @@ window/size/viewport_height=360
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="canvas_items"
-window/stretch/aspect="keep_height"
 window/stretch/scale_mode="integer"
 
 [file_customization]
@@ -64,10 +64,15 @@ hit={
 [layer_names]
 
 2d_physics/layer_1="Ground"
+2d_navigation/layer_1="NavIgationChicken"
 2d_physics/layer_2="Player"
 2d_physics/layer_3="Interactable"
+2d_physics/layer_4="Tools"
+2d_physics/layer_5="Object"
+2d_physics/layer_6="Collectable"
 
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
+2d/snap/snap_2d_transforms_to_pixel=true
