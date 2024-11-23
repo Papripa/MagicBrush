@@ -1,10 +1,10 @@
 [gd_scene load_steps=13 format=3 uid="uid://lokn7yb0m1ht"]
 
-[ext_resource type="Script" path="res://scenes/characters/chicken/npc_chickens.gd" id="1_cy5jo"]
+[ext_resource type="Script" path="res://scenes/characters/cow/npc_cows.gd" id="1_cpf0g"]
 [ext_resource type="Texture2D" uid="uid://c1kbg6ypp2hy1" path="res://asset/game/Characters/cow_sprites.png" id="2_flbns"]
 [ext_resource type="Script" path="res://scripts/state_machine/node_state_machine.gd" id="3_cpthi"]
-[ext_resource type="Script" path="res://scenes/characters/chicken/idle.gd" id="4_nngim"]
-[ext_resource type="Script" path="res://scenes/characters/chicken/walk.gd" id="5_ntity"]
+[ext_resource type="Script" path="res://scenes/characters/cow/idle.gd" id="4_6yjt5"]
+[ext_resource type="Script" path="res://scenes/characters/cow/walk.gd" id="5_16mxi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kxwvf"]
 atlas = ExtResource("2_flbns")
@@ -57,11 +57,13 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_v3em2"]
 radius = 7.07107
 
-[node name="Chicken" type="CharacterBody2D"]
-script = ExtResource("1_cy5jo")
+[node name="Cow" type="CharacterBody2D"]
+collision_layer = 64
+script = ExtResource("1_cpf0g")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1, -13)
+scale = Vector2(0.7, 0.7)
 sprite_frames = SubResource("SpriteFrames_nbdit")
 animation = &"walk"
 autoplay = "idle"
@@ -71,19 +73,22 @@ position = Vector2(0, -8)
 shape = SubResource("CircleShape2D_v3em2")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 10.0
+path_postprocessing = 1
+avoidance_enabled = true
+debug_enabled = true
 
 [node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_node_state")]
 script = ExtResource("3_cpthi")
 initial_node_state = NodePath("Idle")
 
 [node name="Idle" type="Node" parent="StateMachine" node_paths=PackedStringArray("character", "animated_sprite_2d")]
-script = ExtResource("4_nngim")
+script = ExtResource("4_6yjt5")
 character = NodePath("../..")
 animated_sprite_2d = NodePath("../../AnimatedSprite2D")
-idle_state_time_interval = 2.0
 
 [node name="Walk" type="Node" parent="StateMachine" node_paths=PackedStringArray("character", "animated_sprite_2d", "navigation_agent_2d")]
-script = ExtResource("5_ntity")
+script = ExtResource("5_16mxi")
 character = NodePath("../..")
 animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 navigation_agent_2d = NodePath("../../NavigationAgent2D")

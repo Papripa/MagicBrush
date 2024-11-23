@@ -1,0 +1,176 @@
+[gd_scene load_steps=5 format=3 uid="uid://bybvif0j6w8nm"]
+
+[ext_resource type="Theme" uid="uid://b4htgwxfq8spp" path="res://scenes/ui/game_ui_theme.tres" id="1_10txi"]
+[ext_resource type="Script" path="res://scenes/ui/day_and_night_panel.gd" id="2_t5gis"]
+[ext_resource type="Texture2D" uid="uid://dvqmn00f4i4e5" path="res://asset/ui/basic_ui_sprites.png" id="2_xvpyg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d15gy"]
+atlas = ExtResource("2_xvpyg")
+region = Rect2(261, 2, 7, 12)
+
+[node name="DayAndNightPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("1_10txi")
+script = ExtResource("2_t5gis")
+
+[node name="DayPanel" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = -80.0
+offset_bottom = 29.0
+theme_type_variation = &"DayAndNightPanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="DayPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="DayLabel" type="Label" parent="DayPanel/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_type_variation = &"DayAndNightLabel"
+text = "DAY 0"
+
+[node name="TimePanel" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = -80.0
+offset_top = 33.0
+offset_bottom = 62.0
+theme_type_variation = &"DayAndNightPanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="TimePanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="TimeLabel" type="Label" parent="TimePanel/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_type_variation = &"DayAndNightLabel"
+text = "00:00"
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_left = -82.0
+offset_top = 68.0
+offset_bottom = 86.0
+
+[node name="NormalS" type="Button" parent="Control"]
+layout_mode = 0
+offset_right = 26.0
+offset_bottom = 18.0
+theme_type_variation = &"DayAndNightButton"
+
+[node name="TextureRect" type="TextureRect" parent="Control/NormalS"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+offset_top = -6.0
+offset_right = 4.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_d15gy")
+
+[node name="FastS" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 28.0
+offset_right = 54.0
+offset_bottom = 18.0
+theme_type_variation = &"DayAndNightButton"
+
+[node name="TextureRect" type="TextureRect" parent="Control/FastS"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1.0
+offset_top = -6.0
+offset_right = 6.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_d15gy")
+
+[node name="TextureRect2" type="TextureRect" parent="Control/FastS"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -6.0
+offset_right = 1.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_d15gy")
+
+[node name="SuperFastS" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 56.0
+offset_right = 82.0
+offset_bottom = 18.0
+theme_type_variation = &"DayAndNightButton"
+
+[node name="TextureRect" type="TextureRect" parent="Control/SuperFastS"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+offset_top = -6.0
+offset_right = 4.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_d15gy")
+
+[node name="TextureRect2" type="TextureRect" parent="Control/SuperFastS"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -6.0
+offset_right = -1.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_d15gy")
+
+[node name="TextureRect3" type="TextureRect" parent="Control/SuperFastS"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 2.0
+offset_top = -6.0
+offset_right = 9.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_d15gy")
+
+[connection signal="pressed" from="Control/NormalS" to="." method="_on_normal_s_pressed"]
+[connection signal="pressed" from="Control/FastS" to="." method="_on_fast_s_pressed"]
+[connection signal="pressed" from="Control/SuperFastS" to="." method="_on_super_fast_s_pressed"]

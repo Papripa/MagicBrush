@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://8jy25y8w2uw0"
+path="res://.godot/imported/ZX Palm Bold.fnt-c483e430e69537a90230c198df034c30.fontdata"
+
+[deps]
+
+source_file="res://asset/ui/fonts/ZX Palm/Atari8/ZX Palm Bold.fnt"
+dest_files=["res://.godot/imported/ZX Palm Bold.fnt-c483e430e69537a90230c198df034c30.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

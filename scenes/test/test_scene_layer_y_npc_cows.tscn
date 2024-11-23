@@ -2,7 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://b65wx0endajr7" path="res://Tilesets/game_tile_sets.tres" id="1_sjh44"]
 [ext_resource type="PackedScene" uid="uid://o4yndaotf8df" path="res://scenes/characters/player/player.tscn" id="2_mhcp6"]
-[ext_resource type="PackedScene" uid="uid://dk03s2ok7drxl" path="res://scenes/characters/chicken/npc_chickens.tscn" id="3_fmsga"]
+[ext_resource type="PackedScene" uid="uid://lokn7yb0m1ht" path="res://scenes/characters/cow/npc_cows.tscn" id="3_bi16c"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_i4yy2"]
 vertices = PackedVector2Array(441.977, 230.219, 441.102, 307.328, 310.703, 311.727, 284.602, 209.109, 324.219, 128.938, 407.148, 97.2969)
@@ -36,37 +36,33 @@ y_sort_enabled = true
 tile_set = ExtResource("1_sjh44")
 
 [node name="Player" parent="." instance=ExtResource("2_mhcp6")]
+position = Vector2(192, 172)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
 [node name="Cows" type="Node2D" parent="."]
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="Cows"]
+position = Vector2(-9, 0)
 navigation_polygon = SubResource("NavigationPolygon_i4yy2")
 
-[node name="Cow" parent="Cows" instance=ExtResource("3_fmsga")]
-position = Vector2(362, 227)
+[node name="Cow" parent="Cows" instance=ExtResource("3_bi16c")]
+position = Vector2(340, 194)
 
-[node name="Cow2" parent="Cows" instance=ExtResource("3_fmsga")]
-position = Vector2(362, 227)
+[node name="Cow2" parent="Cows" instance=ExtResource("3_bi16c")]
+position = Vector2(310, 210)
 
-[node name="Cow3" parent="Cows" instance=ExtResource("3_fmsga")]
-position = Vector2(362, 227)
+[node name="Cow3" parent="Cows" instance=ExtResource("3_bi16c")]
+position = Vector2(310, 176)
 
-[node name="Cow4" parent="Cows" instance=ExtResource("3_fmsga")]
-position = Vector2(362, 227)
+[node name="Cow4" parent="Cows" instance=ExtResource("3_bi16c")]
+position = Vector2(293, 231)
 
-[node name="Cow5" parent="Cows" instance=ExtResource("3_fmsga")]
-position = Vector2(362, 227)
+[node name="Cow5" parent="Cows" instance=ExtResource("3_bi16c")]
+position = Vector2(332, 249)
 
-[node name="Cow6" parent="Cows" instance=ExtResource("3_fmsga")]
-position = Vector2(362, 227)
+[node name="Cow6" parent="Cows" instance=ExtResource("3_bi16c")]
+position = Vector2(334, 185)
 
-[node name="Cow7" parent="Cows" instance=ExtResource("3_fmsga")]
-position = Vector2(362, 227)
-
-[node name="Cow8" parent="Cows" instance=ExtResource("3_fmsga")]
-position = Vector2(362, 227)
-
-[node name="Cow9" parent="Cows" instance=ExtResource("3_fmsga")]
-position = Vector2(362, 227)
+[node name="Cow7" parent="Cows" instance=ExtResource("3_bi16c")]
+position = Vector2(346, 218)
