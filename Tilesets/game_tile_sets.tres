@@ -1,17 +1,21 @@
-[gd_resource type="TileSet" load_steps=17 format=3 uid="uid://b65wx0endajr7"]
+[gd_resource type="TileSet" load_steps=19 format=3 uid="uid://b65wx0endajr7"]
 
+[ext_resource type="PackedScene" uid="uid://dujaotmqwpxat" path="res://scenes/objects/plants/cornharvest.tscn" id="1_aigmy"]
 [ext_resource type="PackedScene" uid="uid://ccsex1jgtf20u" path="res://scenes/objects/trees/big_tree.tscn" id="1_ibl61"]
 [ext_resource type="Texture2D" uid="uid://i16kx161spix" path="res://asset/game/Tilesets/water.png" id="1_onlgl"]
 [ext_resource type="PackedScene" uid="uid://c1vr8362q2js6" path="res://scenes/Houses/large_house.tscn" id="1_sk7g6"]
 [ext_resource type="Texture2D" uid="uid://cx3igb7ydmwt" path="res://asset/game/Tilesets/grass.png" id="2_5f11y"]
 [ext_resource type="PackedScene" uid="uid://cjyiutvw4hclj" path="res://scenes/objects/rocks/rock.tscn" id="2_am12t"]
 [ext_resource type="PackedScene" uid="uid://du3mrdedspa2r" path="res://scenes/Houses/Medium_house.tscn" id="2_ltj6o"]
+[ext_resource type="PackedScene" uid="uid://cckrrbat2h2tv" path="res://scenes/objects/plants/tomatoharvest.tscn" id="2_n2eo1"]
 [ext_resource type="PackedScene" uid="uid://kbivqps02jy2" path="res://scenes/objects/trees/small_tree.tscn" id="3_d6qxw"]
 [ext_resource type="Texture2D" uid="uid://sx8blio7vr74" path="res://asset/game/Tilesets/tilled_dirt_wide.png" id="3_kghjq"]
 [ext_resource type="Texture2D" uid="uid://5g1tm6bct0bq" path="res://asset/game/Objects/basic_grass_biom_things.png" id="4_v0f20"]
 [ext_resource type="Texture2D" uid="uid://mlmodr4a2vqf" path="res://asset/game/Tilesets/fences.png" id="9_lx4d8"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_od0h4"]
+scenes/1/scene = ExtResource("1_aigmy")
+scenes/2/scene = ExtResource("2_n2eo1")
 scenes/3/scene = ExtResource("1_ibl61")
 scenes/6/scene = ExtResource("1_sk7g6")
 scenes/7/scene = ExtResource("2_ltj6o")

@@ -58,10 +58,12 @@ animations = [{
 radius = 7.07107
 
 [node name="Cow" type="CharacterBody2D"]
+y_sort_enabled = true
 collision_layer = 64
 script = ExtResource("1_cpf0g")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+y_sort_enabled = true
 position = Vector2(1, -13)
 scale = Vector2(0.7, 0.7)
 sprite_frames = SubResource("SpriteFrames_nbdit")
@@ -69,6 +71,7 @@ animation = &"walk"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+y_sort_enabled = true
 position = Vector2(0, -8)
 shape = SubResource("CircleShape2D_v3em2")
 
