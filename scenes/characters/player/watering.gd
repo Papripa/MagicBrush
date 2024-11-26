@@ -25,7 +25,7 @@ func _on_enter() -> void:
 	elif player.player_direction == Vector2.LEFT:
 		animated_sprite_2d.play("watering_left")
 	else:
-		animated_sprite_2d.play("tiling_front")
+		animated_sprite_2d.play("watering_front")
 
 func _on_exit() -> void:
 	animated_sprite_2d.stop()#好像有也不影响什么
