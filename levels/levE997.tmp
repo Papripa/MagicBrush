@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddmy1w2tbroth"]
+
+[ext_resource type="Texture2D" uid="uid://fqseghpfybhj" path="res://levels/map.jpg" id="1_2smxt"]
+[ext_resource type="Script" path="res://levels/level_1.gd" id="1_kege7"]
+[ext_resource type="PackedScene" uid="uid://o4yndaotf8df" path="res://scenes/characters/player/player.tscn" id="2_lp1w7"]
+[ext_resource type="PackedScene" uid="uid://c1fsxgavelsu6" path="res://scenes/objects/portal1.tscn" id="3_ftx8k"]
+
+[node name="Level_1" type="Node2D"]
+script = ExtResource("1_kege7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(320.125, 180.75)
+scale = Vector2(0.327051, 0.277308)
+texture = ExtResource("1_2smxt")
+
+[node name="Player" parent="." groups=["player"] instance=ExtResource("2_lp1w7")]
+position = Vector2(108, 123)
+
+[node name="Portal_1" parent="." instance=ExtResource("3_ftx8k")]
+position = Vector2(231, 349)

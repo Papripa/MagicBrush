@@ -1,0 +1,304 @@
+[gd_resource type="SpriteFrames" load_steps=41 format=3]
+
+[ext_resource path="res://animations/images/original/notool/chopping_back/1.png" type="Texture2D" id=1]
+
+[ext_resource path="res://animations/images/original/notool/chopping_back/2.png" type="Texture2D" id=2]
+
+[ext_resource path="res://animations/images/original/notool/chopping_front/1.png" type="Texture2D" id=3]
+
+[ext_resource path="res://animations/images/original/notool/chopping_front/2.png" type="Texture2D" id=4]
+
+[ext_resource path="res://animations/images/original/notool/chopping_left/1.png" type="Texture2D" id=5]
+
+[ext_resource path="res://animations/images/original/notool/chopping_left/2.png" type="Texture2D" id=6]
+
+[ext_resource path="res://animations/images/original/notool/chopping_right/1.png" type="Texture2D" id=7]
+
+[ext_resource path="res://animations/images/original/notool/chopping_right/2.png" type="Texture2D" id=8]
+
+[ext_resource path="res://animations/images/original/notool/idle_back/1.png" type="Texture2D" id=9]
+
+[ext_resource path="res://animations/images/original/notool/idle_back/2.png" type="Texture2D" id=10]
+
+[ext_resource path="res://animations/images/original/notool/idle_front/1.png" type="Texture2D" id=11]
+
+[ext_resource path="res://animations/images/original/notool/idle_front/2.png" type="Texture2D" id=12]
+
+[ext_resource path="res://animations/images/original/notool/idle_left/1.png" type="Texture2D" id=13]
+
+[ext_resource path="res://animations/images/original/notool/idle_left/2.png" type="Texture2D" id=14]
+
+[ext_resource path="res://animations/images/original/notool/idle_right/1.png" type="Texture2D" id=15]
+
+[ext_resource path="res://animations/images/original/notool/idle_right/2.png" type="Texture2D" id=16]
+
+[ext_resource path="res://animations/images/original/notool/tiling_back/1.png" type="Texture2D" id=17]
+
+[ext_resource path="res://animations/images/original/notool/tiling_back/2.png" type="Texture2D" id=18]
+
+[ext_resource path="res://animations/images/original/notool/tiling_front/1.png" type="Texture2D" id=19]
+
+[ext_resource path="res://animations/images/original/notool/tiling_front/2.png" type="Texture2D" id=20]
+
+[ext_resource path="res://animations/images/original/notool/tiling_left/1.png" type="Texture2D" id=21]
+
+[ext_resource path="res://animations/images/original/notool/tiling_left/2.png" type="Texture2D" id=22]
+
+[ext_resource path="res://animations/images/original/notool/tiling_right/1.png" type="Texture2D" id=23]
+
+[ext_resource path="res://animations/images/original/notool/tiling_right/2.png" type="Texture2D" id=24]
+
+[ext_resource path="res://animations/images/original/notool/walk_back/1.png" type="Texture2D" id=25]
+
+[ext_resource path="res://animations/images/original/notool/walk_back/2.png" type="Texture2D" id=26]
+
+[ext_resource path="res://animations/images/original/notool/walk_front/1.png" type="Texture2D" id=27]
+
+[ext_resource path="res://animations/images/original/notool/walk_front/2.png" type="Texture2D" id=28]
+
+[ext_resource path="res://animations/images/original/notool/walk_left/1.png" type="Texture2D" id=29]
+
+[ext_resource path="res://animations/images/original/notool/walk_left/2.png" type="Texture2D" id=30]
+
+[ext_resource path="res://animations/images/original/notool/walk_right/1.png" type="Texture2D" id=31]
+
+[ext_resource path="res://animations/images/original/notool/walk_right/2.png" type="Texture2D" id=32]
+
+[ext_resource path="res://animations/images/original/notool/watering_back/1.png" type="Texture2D" id=33]
+
+[ext_resource path="res://animations/images/original/notool/watering_back/2.png" type="Texture2D" id=34]
+
+[ext_resource path="res://animations/images/original/notool/watering_front/1.png" type="Texture2D" id=35]
+
+[ext_resource path="res://animations/images/original/notool/watering_front/2.png" type="Texture2D" id=36]
+
+[ext_resource path="res://animations/images/original/notool/watering_left/1.png" type="Texture2D" id=37]
+
+[ext_resource path="res://animations/images/original/notool/watering_left/2.png" type="Texture2D" id=38]
+
+[ext_resource path="res://animations/images/original/notool/watering_right/1.png" type="Texture2D" id=39]
+
+[ext_resource path="res://animations/images/original/notool/watering_right/2.png" type="Texture2D" id=40]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(1)
+}, {
+"duration": 1.0,
+"texture": ExtResource(2)
+}],
+"loop": false,
+"name": &"chopping_back",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(3)
+}, {
+"duration": 1.0,
+"texture": ExtResource(4)
+}],
+"loop": false,
+"name": &"chopping_front",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(5)
+}, {
+"duration": 1.0,
+"texture": ExtResource(6)
+}],
+"loop": false,
+"name": &"chopping_left",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(7)
+}, {
+"duration": 1.0,
+"texture": ExtResource(8)
+}],
+"loop": false,
+"name": &"chopping_right",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(9)
+}, {
+"duration": 1.0,
+"texture": ExtResource(10)
+}],
+"loop": true,
+"name": &"idle_back",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(11)
+}, {
+"duration": 1.0,
+"texture": ExtResource(12)
+}],
+"loop": true,
+"name": &"idle_front",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(13)
+}, {
+"duration": 1.0,
+"texture": ExtResource(14)
+}],
+"loop": true,
+"name": &"idle_left",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(15)
+}, {
+"duration": 1.0,
+"texture": ExtResource(16)
+}],
+"loop": true,
+"name": &"idle_right",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(17)
+}, {
+"duration": 1.0,
+"texture": ExtResource(18)
+}],
+"loop": false,
+"name": &"tiling_back",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(19)
+}, {
+"duration": 1.0,
+"texture": ExtResource(20)
+}],
+"loop": false,
+"name": &"tiling_front",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(21)
+}, {
+"duration": 1.0,
+"texture": ExtResource(22)
+}],
+"loop": false,
+"name": &"tiling_left",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(23)
+}, {
+"duration": 1.0,
+"texture": ExtResource(24)
+}],
+"loop": false,
+"name": &"tiling_right",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(25)
+}, {
+"duration": 1.0,
+"texture": ExtResource(26)
+}],
+"loop": true,
+"name": &"walk_back",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(27)
+}, {
+"duration": 1.0,
+"texture": ExtResource(28)
+}],
+"loop": true,
+"name": &"walk_front",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(29)
+}, {
+"duration": 1.0,
+"texture": ExtResource(30)
+}],
+"loop": true,
+"name": &"walk_left",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(31)
+}, {
+"duration": 1.0,
+"texture": ExtResource(32)
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(33)
+}, {
+"duration": 1.0,
+"texture": ExtResource(34)
+}],
+"loop": false,
+"name": &"watering_back",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(35)
+}, {
+"duration": 1.0,
+"texture": ExtResource(36)
+}],
+"loop": false,
+"name": &"watering_front",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(37)
+}, {
+"duration": 1.0,
+"texture": ExtResource(38)
+}],
+"loop": false,
+"name": &"watering_left",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource(39)
+}, {
+"duration": 1.0,
+"texture": ExtResource(40)
+}],
+"loop": false,
+"name": &"watering_right",
+"speed": 3.0
+}]

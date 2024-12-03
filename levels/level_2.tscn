@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://clagcdbd5vuyu"]
+
+[ext_resource type="Script" path="res://levels/level_2.gd" id="1_oqtyt"]
+[ext_resource type="Texture2D" uid="uid://dxk3prw0ivbmp" path="res://levels/map_pixel.png" id="1_rpvyj"]
+[ext_resource type="PackedScene" uid="uid://o4yndaotf8df" path="res://scenes/characters/player/player.tscn" id="2_cxemb"]
+[ext_resource type="PackedScene" uid="uid://cci2hybsmq6p2" path="res://scenes/objects/portal2.tscn" id="3_g5ycv"]
+[ext_resource type="PackedScene" uid="uid://cvmciq83olqao" path="res://scenes/objects/portal3.tscn" id="4_0dd4q"]
+
+[node name="Level_2" type="Node2D"]
+script = ExtResource("1_oqtyt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(322, 182.5)
+scale = Vector2(0.330256, 0.280769)
+texture = ExtResource("1_rpvyj")
+
+[node name="Player" parent="." groups=["player"] instance=ExtResource("2_cxemb")]
+position = Vector2(224, 33)
+
+[node name="Portal_2" parent="." instance=ExtResource("3_g5ycv")]
+position = Vector2(480, 48)
+
+[node name="Portal_3" parent="." instance=ExtResource("4_0dd4q")]
+visible = false
+position = Vector2(484, 18)

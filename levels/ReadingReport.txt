@@ -1,0 +1,50 @@
+Hiding in Plain Signal: Physical Signal Overshadowing Attack on LTE
+Yuanxin Pang
+20234570
+Summary
+1. Target System & Service
+LTE Access network communication, focusing on the interaction between User Equipment (UE) and cell towers in LTE networks.
+2. Vulnerability (10 points)
+(1)Unprotected Communication Phases: LTE messages lack integrity protection during initial communication stages
+(2)Specific Weakness: Security context (such as UE authentication and key verification) is not immediately established
+(3)Exposed Information: Broadcast messages remain unprotected before security context is shared
+
+3. Exploitation (Attacks)
+(1)SigOver (Signal Overshadowing)
+(2)Core Mechanism: Overshadow wireless messages by precise synchronization of time and frequency
+Attack Characteristics:
+	No need to establish connection
+	Direct message overwriting
+(3)Technical Details:
+A. Location: Overshadow Subframes
+B. Multi-path Mitigation: Use of pilot symbols
+C. Malicious Message Categories: PCFICH, PDCCH, PDSCH
+(4)Synchronization Techniques
+A. Time Synchronization: PSS/SSS
+B. Frequency Synchronization:GPSDO and CFO correction
+Both synchronization errors are tolerant within UE's acceptable range
+
+4. Evaluation and Experimental Method
+Research Infrastructure
+
+(1)LTE Stack: Open-source srsLTE
+(2)Target Devices: iPhone XS, iPhone 7, Galaxy S6 Edge, LG G6
+(3)Attacker Setup
+	USRP X310 + GPSDP (OCXO)
+	USRP B210 + GPSDO (TCXO)
+(4)Comparative Advantages Over Existing Techniques(FBS(Fake Base Station))
+No connection establishment required
+Power-efficient attack
+Maintains victim's communication with legitimate cell
+Increased signaling message TAU efficiency
+
+5. Defense (Potential Solutions)
+(1)Physical Detection 
+A. Approaches: Correlation-based Method: Calculate channel magnitude correlation between consecutive subframes
+B.Limitations:Challenging in Non-Line-of-Sight (NLOS) scenarios and attackers can adjust malicious signal power
+(2)Integrate digital signature of the broadcast message
+Maybe in 5G, but it’s not standardized yet
+
+6. Question
+
+Can SigOver be combined with FBS attack to leverage the advantages of both techniques while maintaining high efficiency and low power consumption?

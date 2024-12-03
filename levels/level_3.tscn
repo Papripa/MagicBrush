@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://hqfpfb1px486"]
+
+[ext_resource type="Texture2D" uid="uid://ccwbpf23mj6gx" path="res://levels/map_edge_output.jpg" id="1_asocg"]
+[ext_resource type="Script" path="res://levels/level_3.gd" id="1_u3nlx"]
+[ext_resource type="PackedScene" uid="uid://cci2hybsmq6p2" path="res://scenes/objects/portal2.tscn" id="3_vt8u6"]
+[ext_resource type="PackedScene" uid="uid://o4yndaotf8df" path="res://scenes/characters/player/player.tscn" id="9_gw7jj"]
+
+[node name="Level_3" type="Node2D"]
+script = ExtResource("1_u3nlx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(322, 182.5)
+scale = Vector2(0.330256, 0.280769)
+texture = ExtResource("1_asocg")
+
+[node name="Player" parent="." groups=["player"] instance=ExtResource("9_gw7jj")]
+position = Vector2(224, 33)
+
+[node name="Portal_3" parent="." instance=ExtResource("3_vt8u6")]
+visible = false
+position = Vector2(483, 17)

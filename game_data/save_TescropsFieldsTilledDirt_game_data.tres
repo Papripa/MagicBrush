@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="SaveGameDataResource" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://resources/node_data_resource.gd" id="1_234wu"]
+[ext_resource type="Script" path="res://resources/scene_data_resource.gd" id="2_wqk3a"]
+[ext_resource type="Script" path="res://resources/save_game_data_resource.gd" id="3_sue47"]
+
+[sub_resource type="Resource" id="Resource_f16hb"]
+script = ExtResource("2_wqk3a")
+node_name = "Player"
+scene_file_path = "res://scenes/characters/player/player.tscn"
+global_position = Vector2(385.168, 296)
+node_path = NodePath("/root/TescropsFieldsTilledDirt/Player")
+parent_node_path = NodePath("/root/TescropsFieldsTilledDirt")
+
+[sub_resource type="Resource" id="Resource_x2aw5"]
+script = ExtResource("2_wqk3a")
+node_name = "Corn"
+scene_file_path = "res://scenes/objects/plants/corn.tscn"
+global_position = Vector2(145, 188)
+node_path = NodePath("/root/TescropsFieldsTilledDirt/Corn")
+parent_node_path = NodePath("/root/TescropsFieldsTilledDirt")
+
+[sub_resource type="Resource" id="Resource_bw0i5"]
+script = ExtResource("2_wqk3a")
+node_name = "Tomato"
+scene_file_path = "res://scenes/objects/plants/tomato.tscn"
+global_position = Vector2(173, 190)
+node_path = NodePath("/root/TescropsFieldsTilledDirt/Tomato")
+parent_node_path = NodePath("/root/TescropsFieldsTilledDirt")
+
+[sub_resource type="Resource" id="Resource_n40jv"]
+script = ExtResource("2_wqk3a")
+node_name = "@CharacterBody2D@2"
+scene_file_path = "res://scenes/characters/player/player.tscn"
+global_position = Vector2(385.168, 296)
+node_path = NodePath("/root/TescropsFieldsTilledDirt/@CharacterBody2D@2")
+parent_node_path = NodePath("/root/TescropsFieldsTilledDirt")
+
+[sub_resource type="Resource" id="Resource_3xjni"]
+script = ExtResource("2_wqk3a")
+node_name = "@Node2D@3"
+scene_file_path = "res://scenes/objects/plants/corn.tscn"
+global_position = Vector2(145, 188)
+node_path = NodePath("/root/TescropsFieldsTilledDirt/@Node2D@3")
+parent_node_path = NodePath("/root/TescropsFieldsTilledDirt")
+
+[sub_resource type="Resource" id="Resource_eia3t"]
+script = ExtResource("2_wqk3a")
+node_name = "@Node2D@4"
+scene_file_path = "res://scenes/objects/plants/tomato.tscn"
+global_position = Vector2(173, 190)
+node_path = NodePath("/root/TescropsFieldsTilledDirt/@Node2D@4")
+parent_node_path = NodePath("/root/TescropsFieldsTilledDirt")
+
+[resource]
+script = ExtResource("3_sue47")
+save_data_nodes = Array[ExtResource("1_234wu")]([SubResource("Resource_f16hb"), SubResource("Resource_x2aw5"), SubResource("Resource_bw0i5"), SubResource("Resource_n40jv"), SubResource("Resource_3xjni"), SubResource("Resource_eia3t")])

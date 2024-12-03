@@ -1,7 +1,9 @@
-[gd_scene load_steps=12 format=4 uid="uid://b0idbwo0yglco"]
+[gd_scene load_steps=14 format=4 uid="uid://b0idbwo0yglco"]
 
 [ext_resource type="TileSet" uid="uid://b65wx0endajr7" path="res://Tilesets/game_tile_sets.tres" id="1_6pfwy"]
+[ext_resource type="PackedScene" uid="uid://bvlpbr60prd05" path="res://scenes/components/test_scene_save_data_manager_component.tscn" id="1_behk1"]
 [ext_resource type="PackedScene" uid="uid://clteye5apq0g5" path="res://scenes/objects/egg.tscn" id="2_dccn6"]
+[ext_resource type="Script" path="res://scenes/components/test_scene_save_data_manager_component.gd" id="2_etd2d"]
 [ext_resource type="PackedScene" uid="uid://c1lrfsnk8hc6y" path="res://scenes/objects/milk.tscn" id="3_fgkg5"]
 [ext_resource type="PackedScene" uid="uid://dujaotmqwpxat" path="res://scenes/objects/plants/cornharvest.tscn" id="4_yoth5"]
 [ext_resource type="PackedScene" uid="uid://cckrrbat2h2tv" path="res://scenes/objects/plants/tomatoharvest.tscn" id="5_kui0e"]
@@ -25,6 +27,9 @@ source_geometry_mode = 2
 [node name="ViewScene" type="Node2D"]
 y_sort_enabled = true
 
+[node name="TestSceneSaveDataManagerComponent" parent="." instance=ExtResource("1_behk1")]
+script = ExtResource("2_etd2d")
+
 [node name="GameTileMap" type="Node2D" parent="."]
 y_sort_enabled = true
 
@@ -38,7 +43,7 @@ tile_map_data = PackedByteArray("AAAPABEAAgABAAEAAAAPABAAAgABAAEAAAAPAA8AAgABAAE
 tile_set = ExtResource("1_6pfwy")
 
 [node name="UnderGrowth" type="TileMapLayer" parent="GameTileMap"]
-tile_map_data = PackedByteArray("AAAJAAcABgAIAAAAAAAcAAwABgAIAAAAAAAMAA8ABAABAAEAAAAKAAgABgAHAAAAAAAHAAUABgAHAAAAAAAKAAUABgAHAAAAAAAHAAoABgAHAAAAAAATAAQABgAGAAEAAAATAAgABgAFAAEAAAATAAkABgAFAAEAAAAaAAQABgAHAAIAAAATABAABgAIAAIAAAATABIABgAIAAIAAAATABMABgAIAAIAAAATABQABgAIAAIAAAATABEABgAIAAIAAAARABQABAACAAIAAAARABMABAACAAEAAAARABIABAACAAEAAAAQABQABAABAAIAAAAQABMABAABAAEAAAAQABIABAAGAAIAAAAPABQABAABAAIAAAAPABMABAABAAEAAAAPABIABAABAAAAAAAOABQABAABAAIAAAAOABMABAABAAEAAAAOABIABAABAAAAAAANABQABAABAAIAAAANABMABAABAAEAAAANABIABAABAAAAAAAMABQABAABAAIAAAAMABMABAABAAEAAAAMABIABAABAAAAAAALABQABAABAAIAAAALABMABAABAAEAAAALABIABAABAAAAAAAKABQABAABAAIAAAAKABMABAABAAEAAAAKABIABAABAAAAAAAJABQABAAAAAIAAAAJABMABAAAAAEAAAAJABIABAAAAAAAAAAOAA8ABAACAAEAAAAOAA4ABAACAAAAAAANAA8ABAABAAEAAAANAA4ABAABAAAAAAAMAA4ABAABAAAAAAALAA8ABAABAAEAAAALAA4ABAABAAAAAAAKAA8ABAABAAEAAAAKAA4ABAABAAAAAAAJAA8ABAABAAEAAAAJAA4ABAABAAAAAAAIAA8ABAABAAEAAAAIAA4ABAABAAAAAAAHAA8ABAABAAEAAAAHAA4ABAABAAAAAAAGAA8ABAAAAAEAAAAGAA4ABAAAAAAAAAAOABAABAACAAIAAAANABAABAABAAIAAAAMABAABAABAAIAAAALABAABAABAAIAAAAKABAABAABAAIAAAAJABAABAABAAIAAAAIABAABAABAAIAAAAHABAABAABAAIAAAAGABAABAAAAAIAAAARABEABAACAAEAAAARABAABAACAAEAAAARAA8ABAACAAEAAAARAA4ABAACAAAAAAAQABEABAAAAAEAAAAQABAABAAAAAEAAAAQAA8ABAAAAAEAAAAQAA4ABAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAJAAcABgAIAAAAAAAcAAwABgAIAAAAAAAKAAgABgAHAAAAAAAHAAUABgAHAAAAAAAKAAUABgAHAAAAAAAHAAoABgAHAAAAAAATAAQABgAGAAEAAAATAAgABgAFAAEAAAATAAkABgAFAAEAAAAaAAQABgAHAAIAAAATABAABgAIAAIAAAATABIABgAIAAIAAAATABMABgAIAAIAAAATABQABgAIAAIAAAATABEABgAIAAIAAAARABMABAACAAEAAAA=")
 tile_set = ExtResource("1_6pfwy")
 
 [node name="UpGrowth" type="TileMapLayer" parent="GameTileMap"]
@@ -66,7 +71,7 @@ position = Vector2(399.5, 101.5)
 [node name="TomatoHarvest" parent="." instance=ExtResource("5_kui0e")]
 position = Vector2(422, 104)
 
-[node name="Player" parent="." instance=ExtResource("6_6fwnp")]
+[node name="Player" parent="." groups=["player"] instance=ExtResource("6_6fwnp")]
 position = Vector2(401, 295)
 
 [node name="Chickens" type="Node2D" parent="."]
