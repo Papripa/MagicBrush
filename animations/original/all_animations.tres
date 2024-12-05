@@ -1,0 +1,162 @@
+[gd_resource type="SpriteFrames" load_steps=40 format=2] [ext_resource path="res://animations/images/original/notool/chopping_back/1.png" type="Texture2D" id=1]
+
+[ext_resource path="res://animations/images/original/notool/chopping_back/2.png" type="Texture2D" id=2]
+
+[ext_resource path="res://animations/images/original/notool/chopping_front/1.png" type="Texture2D" id=3]
+
+[ext_resource path="res://animations/images/original/notool/chopping_front/2.png" type="Texture2D" id=4]
+
+[ext_resource path="res://animations/images/original/notool/chopping_left/1.png" type="Texture2D" id=5]
+
+[ext_resource path="res://animations/images/original/notool/chopping_left/2.png" type="Texture2D" id=6]
+
+[ext_resource path="res://animations/images/original/notool/chopping_right/1.png" type="Texture2D" id=7]
+
+[ext_resource path="res://animations/images/original/notool/chopping_right/2.png" type="Texture2D" id=8]
+
+[ext_resource path="res://animations/images/original/notool/idle_back/1.png" type="Texture2D" id=9]
+
+[ext_resource path="res://animations/images/original/notool/idle_back/2.png" type="Texture2D" id=10]
+
+[ext_resource path="res://animations/images/original/notool/idle_front/1.png" type="Texture2D" id=11]
+
+[ext_resource path="res://animations/images/original/notool/idle_front/2.png" type="Texture2D" id=12]
+
+[ext_resource path="res://animations/images/original/notool/idle_left/1.png" type="Texture2D" id=13]
+
+[ext_resource path="res://animations/images/original/notool/idle_left/2.png" type="Texture2D" id=14]
+
+[ext_resource path="res://animations/images/original/notool/idle_right/1.png" type="Texture2D" id=15]
+
+[ext_resource path="res://animations/images/original/notool/idle_right/2.png" type="Texture2D" id=16]
+
+[ext_resource path="res://animations/images/original/notool/tiling_back/1.png" type="Texture2D" id=17]
+
+[ext_resource path="res://animations/images/original/notool/tiling_back/2.png" type="Texture2D" id=18]
+
+[ext_resource path="res://animations/images/original/notool/tiling_front/1.png" type="Texture2D" id=19]
+
+[ext_resource path="res://animations/images/original/notool/tiling_front/2.png" type="Texture2D" id=20]
+
+[ext_resource path="res://animations/images/original/notool/tiling_left/1.png" type="Texture2D" id=21]
+
+[ext_resource path="res://animations/images/original/notool/tiling_left/2.png" type="Texture2D" id=22]
+
+[ext_resource path="res://animations/images/original/notool/tiling_right/1.png" type="Texture2D" id=23]
+
+[ext_resource path="res://animations/images/original/notool/tiling_right/2.png" type="Texture2D" id=24]
+
+[ext_resource path="res://animations/images/original/notool/walk_back/1.png" type="Texture2D" id=25]
+
+[ext_resource path="res://animations/images/original/notool/walk_back/2.png" type="Texture2D" id=26]
+
+[ext_resource path="res://animations/images/original/notool/walk_front/1.png" type="Texture2D" id=27]
+
+[ext_resource path="res://animations/images/original/notool/walk_front/2.png" type="Texture2D" id=28]
+
+[ext_resource path="res://animations/images/original/notool/walk_left/1.png" type="Texture2D" id=29]
+
+[ext_resource path="res://animations/images/original/notool/walk_left/2.png" type="Texture2D" id=30]
+
+[ext_resource path="res://animations/images/original/notool/walk_right/1.png" type="Texture2D" id=31]
+
+[ext_resource path="res://animations/images/original/notool/walk_right/2.png" type="Texture2D" id=32]
+
+[ext_resource path="res://animations/images/original/notool/watering_back/1.png" type="Texture2D" id=33]
+
+[ext_resource path="res://animations/images/original/notool/watering_back/2.png" type="Texture2D" id=34]
+
+[ext_resource path="res://animations/images/original/notool/watering_front/1.png" type="Texture2D" id=35]
+
+[ext_resource path="res://animations/images/original/notool/watering_front/2.png" type="Texture2D" id=36]
+
+[ext_resource path="res://animations/images/original/notool/watering_left/1.png" type="Texture2D" id=37]
+
+[ext_resource path="res://animations/images/original/notool/watering_left/2.png" type="Texture2D" id=38]
+
+[ext_resource path="res://animations/images/original/notool/watering_right/1.png" type="Texture2D" id=39]
+
+[ext_resource path="res://animations/images/original/notool/watering_right/2.png" type="Texture2D" id=40]
+
+[resource]
+animations = [{
+"frames": [ExtResource(1), ExtResource(2)],
+"name": "chopping_back"
+},
+{
+"frames": [ExtResource(3), ExtResource(4)],
+"name": "chopping_front"
+},
+{
+"frames": [ExtResource(5), ExtResource(6)],
+"name": "chopping_left"
+},
+{
+"frames": [ExtResource(7), ExtResource(8)],
+"name": "chopping_right"
+},
+{
+"frames": [ExtResource(9), ExtResource(10)],
+"name": "idle_back"
+},
+{
+"frames": [ExtResource(11), ExtResource(12)],
+"name": "idle_front"
+},
+{
+"frames": [ExtResource(13), ExtResource(14)],
+"name": "idle_left"
+},
+{
+"frames": [ExtResource(15), ExtResource(16)],
+"name": "idle_right"
+},
+{
+"frames": [ExtResource(17), ExtResource(18)],
+"name": "tiling_back"
+},
+{
+"frames": [ExtResource(19), ExtResource(20)],
+"name": "tiling_front"
+},
+{
+"frames": [ExtResource(21), ExtResource(22)],
+"name": "tiling_left"
+},
+{
+"frames": [ExtResource(23), ExtResource(24)],
+"name": "tiling_right"
+},
+{
+"frames": [ExtResource(25), ExtResource(26)],
+"name": "walk_back"
+},
+{
+"frames": [ExtResource(27), ExtResource(28)],
+"name": "walk_front"
+},
+{
+"frames": [ExtResource(29), ExtResource(30)],
+"name": "walk_left"
+},
+{
+"frames": [ExtResource(31), ExtResource(32)],
+"name": "walk_right"
+},
+{
+"frames": [ExtResource(33), ExtResource(34)],
+"name": "watering_back"
+},
+{
+"frames": [ExtResource(35), ExtResource(36)],
+"name": "watering_front"
+},
+{
+"frames": [ExtResource(37), ExtResource(38)],
+"name": "watering_left"
+},
+{
+"frames": [ExtResource(39), ExtResource(40)],
+"name": "watering_right"
+}]
+    

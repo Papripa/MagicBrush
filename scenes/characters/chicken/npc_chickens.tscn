@@ -84,7 +84,6 @@ shape = SubResource("CircleShape2D_v3em2")
 path_desired_distance = 10.0
 path_postprocessing = 1
 avoidance_enabled = true
-debug_enabled = true
 
 [node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_node_state")]
 script = ExtResource("2_863fs")
